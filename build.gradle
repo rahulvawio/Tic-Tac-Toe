@@ -11,6 +11,11 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+   // Specify Java version here
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 
 allprojects {
     repositories {
