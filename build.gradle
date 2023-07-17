@@ -5,17 +5,22 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+         classpath 'com.android.tools.build:gradle:7.3.3' // Update to the latest compatible version
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
-   // Specify Java version here
+android {
+    // ... (other configurations)
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    // ... (other configurations)
+}
 
 allprojects {
     repositories {
